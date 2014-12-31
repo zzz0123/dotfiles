@@ -16,6 +16,7 @@ NeoBundleCheck
 " vundle
 " original repos on github
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-pathogen'
 
 " vim-scripts repos
 NeoBundle 'rails.vim'
@@ -34,6 +35,8 @@ NeoBundle 'yanktmp.vim'
 NeoBundle 'rbtnn/rabbit-ui.vim'
 NeoBundle 'rbtnn/rabbit-ui-collection.vim'
 
+NeoBundle 'scrooloose/syntastic'
+
 filetype plugin indent on
 
 let g:neocomplcache_enable_at_startup = 1
@@ -42,6 +45,11 @@ let g:neocomplcache_enable_at_startup = 1
 noremap <silent> sy :call YanktmpYank()<CR>
 noremap <silent> sp :call YanktmpPaste_p()<CR>
 noremap <silent> sP :call YanktmpPaste_P()<CR>
+
+"syntastic
+let g:syntastic_enable_signs=1
+let g:syntastic_enable_highlighting=1
+let g:syntastic_auto_loc_list=2
 
 """ plugin end
 
